@@ -44,7 +44,7 @@ class Communication
     def lupinerror
     begin
       if @answer =! "同級生" || "姉の旦那" || "取引先"
-       raise RuntimeError,"曲：ルパン三世のテーマ"
+       raise RuntimeError, "曲：ルパン三世のテーマ"
      end
       rescue => e
            puts "？？「ばっかもーーーーん！！！そいつがルパンだーーーーーー！！！」"
@@ -53,8 +53,9 @@ class Communication
         end
       end
 
-       class Playground < Communication
-       end
+     class Playground < Communication
+     end
+
 end
 
 greeting = Communication.new
